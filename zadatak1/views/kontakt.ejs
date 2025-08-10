@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Kontakt - NODE JS</title>
+    </head>
+    <body>
+        <h1>Pozdrav</h1>
+
+        <p>Broj je <%= broj %></p>
+        <p>Adresa je <%= adresa %></p>
+        <p>Grad je <%= grad %></p>
+
+        <ol>
+            <% for(let i=0;i<gosti.length;i++) {%>
+                <li><%= gosti[i] %></li>
+            <% } %>
+        </ol>
+    </body>
+</html>
