@@ -44,7 +44,6 @@ app.post('/dodaj/:tablica', (req, res) => {
         "lozinka": lozinka
     }
 
-    // INSERT INTO :tablica SET username = :kor_ime AND email = :email ..
 
     res.send(korisnik)
 })
@@ -62,7 +61,6 @@ app.put('/uredi/:tablica/:id', (req, res) => {
         "lozinka": lozinka
     }
 
-    // UPDATE :tablica SET username ... WHERE id = :id
 
     res.send(korisnik)
 })
@@ -71,7 +69,6 @@ app.delete('/izbrisi/:tablica/:id', (req, res) => {
     let id = req.params.id
     let tablica = req.params.tablica
 
-    // DELETE FROM :tablica WHERE id = :id
 
     res.send(korisnik)
 })
